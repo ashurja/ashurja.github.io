@@ -10720,11 +10720,12 @@ a.theme-btn-on-bg:hover, a.theme-btn-on-bg:focus, a.theme-btn-on-bg:active, .the
 
 .resume-position-title {
   font-size: 1.125rem;
-  color: #434E5E;
+  color: black;
 }
 
 .resume-timeline-item-desc-heading {
   font-size: 1rem;
+  color: black
 }
 
 .resume-skills-cat {
@@ -10738,7 +10739,7 @@ a.theme-btn-on-bg:hover, a.theme-btn-on-bg:focus, a.theme-btn-on-bg:active, .the
 }
 
 .resume-degree {
-  color: #434E5E;
+  color: black;
 }
 
 .resume-degree-org {
