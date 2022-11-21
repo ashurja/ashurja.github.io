@@ -82,12 +82,13 @@
 										    <div class="resume-position-time">2022 - Present</div>
 									    </div><!--//resume-timeline-item-header-->
 									    <div class="resume-timeline-item-desc">
-										    <p>Evaluation of the performance of WebAssembly System Interface (WASI) using wasmtime runtime compared with the native code.</p>
+										    <p>Evaluation of the performance of WebAssembly System Interface (WASI) compared to the native code.</p>
 										    <!-- <h4 class="resume-timeline-item-desc-heading font-weight-bold">Achievements:</h4> -->
 										    <ul>
 											    <li>Developed CPU- and Memory-intensive micro-benchmarks as well a micro-benchmark to test the file system.</li>
-											    <li>Analyzed the results and identified the areas where WASI is suboptimal to the native code.</li>
-											    <li>Finding solutions to improve the performance of WASI.</li>
+											    <li>Wrote a bash script to analyze the performance of WASI vs x86 and ARM machines using Linux profiling tools.</li>
+											    <li>Wrote a Python script to collect and parse more than 100k data files into .csv files and graphs</li>
+												<li>Currently finding solutions to improve the performance of WASI</li>
 										    </ul>
 										    <ul class="list-inline">
 											    <li class="list-inline-item"><span class="badge bg-primary badge-pill">C/C++</span></li>
@@ -112,14 +113,15 @@
 									    <div class="resume-timeline-item-desc">
 										    <p>Summer internship project that enables scientists, researchers, and pharmaceutical companies to increase the speed and comprehension of the analysis of proteins. </p>
 										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Achievements</h4>
-										    <p>Developed from scratch an AR application on IOS devices through Unity that allows users to analyze 3D proteins on portable devices without the need for a VR experience or its equipment.</p>
 											<ul>
-											    <li>Made the 3D objects scalable and movable to enhance the workflow of the user and speed up analysis.</li>
-											    <li>Implemented all the design components using a user-centered design framework.</li>
+												<li>Developed from scratch an AR application on IOS devices that allows users to analyze 3D proteins without the need for a VR experience.</li>
+											    <li>Developed a local database to store the elements fetched from an online database.</li>
+											    <li>Wrote initial scripts to enable cross-platform compatibility.</li>
 										    </ul>
 										    <ul class="list-inline">
 											    <li class="list-inline-item"><span class="badge bg-primary badge-pill">Unity3D</span></li>
 											    <li class="list-inline-item"><span class="badge bg-primary badge-pill">C#</span></li>
+												<li class="list-inline-item"><span class="badge bg-primary badge-pill">Javascript</span></li>
 										    </ul>
 									    </div><!--//resume-timeline-item-desc-->
 
@@ -144,27 +146,27 @@
 										    <div class="resume-position-time">March 2022</div>
 									    </div><!--//resume-timeline-item-header-->
 									    <div class="resume-timeline-item-desc">
-										    <p>Modified the 5-stage pipelined MIPS 32 processor to include advanced optimizations that significantly improved the performance across all the four benchmarks.</p>
+										    <p>Modified the 5-stage pipelined MIPS 32 processor to include advanced optimizations that significantly improved the performance across all benchmarks and wrote bash and Python scripts to analyze and collect performance data to achieve the highest optimization.</p>
 										    <!-- <h4 class="resume-timeline-item-desc-heading font-weight-bold">Achievements:</h4> -->
 											<h4 class="resume-timeline-item-desc-heading font-weight-bold">Branch Prediction:</h4>
 										    <ul>
-											    <li>Implemented 8KB 8-component TAGE branch predictor that reduced number of mispredictions from the baseline branch predictor (Always Not Taken) by 97.59%, 94.47%, 86.36%, 99.1%.</li>
+											    <li>Implemented 8KB 8-component TAGE branch predictor that reduced(up to) number of mispredictions from the baseline branch predictor(bi-modal) across all benchmarks on average by 94.3% (99.1%).</li>
 										    </ul>
 											<h4 class="resume-timeline-item-desc-heading font-weight-bold">D_cache Optimizations:</h4>
 										    <ul>
 												<li>Set Dueling:</li>
 												<ul>
-													<li>Implemented DRRIP cache replacement policy that reduced the number of d_cache misses from the baseline direct mapped 128 byte cache by 1.33%, 80.34%, 8.02%, 36.17%.</li>
+													<li>Implemented DRRIP cache replacement policy that reduced(up to) the number of d_cache misses from the baseline direct mapped cache across all benchmarks by 31.4% (80.3%).</li>
 												</ul>
 												<li>Victim Cache:</li>
 												<ul>
-													<li>Implemented 16 byte victim cache that reduced the CPI from the baseline  by 0%, 7.1%, 9.37%, 19.86%.</li>
+													<li>Implemented a victim cache using LRU replacement policy that reduced(up to) the CPI from the baseline across all benchmarks on average by 10.2% (19.9%).</li>
 												</ul>
 										    </ul>
 											<h4 class="resume-timeline-item-desc-heading font-weight-bold">Out of order Execution:</h4>
 										    <ul>
 											    <li>Modified the current pipeline to scalar OOO processor similar to the one being used by Alpha21264 with Partial Ordering for memory disambiguation policy.</li>
-												<li>Reduced the CPI from the baseline by 13.15%, -9.75%, 2.61%, 9.91%.</li>
+												<li>Reduced(up to) the CPI from the baseline across all benchmarks on average by 8.9% (13.15%).</li>
 											</ul>
 										    <ul class="list-inline">
 											    <li class="list-inline-item"><span class="badge bg-primary badge-pill">System Verilog</span></li>
@@ -197,17 +199,11 @@
 										    </ul>
 											<h4 class="resume-timeline-item-desc-heading font-weight-bold">Simple Router</h4>
 											<ul>
-											    <li>Implemented a simple router that would handle the following protocols:</li>
-												<ul>
-													<li>ARP Protocol:</li>
-													<ul><li>ARP Request</li><li>ARP Reply</li></ul>
-													<li>ICMP Protocol:</li>
-													<ul><li>Echo Reply, Echo Request</li><li>Destination Unreachable and TTL Time Exceeded Error messages</li></ul>
-													<li>IP Protocol</li>
-												</ul>
+											    <li>Implemented a simple router that would handle ARP, ICMP,  and IP protocols.</li>
 										    </ul>
 										    <ul class="list-inline">
 											    <li class="list-inline-item"><span class="badge bg-primary badge-pill">C</span></li>
+												<li class="list-inline-item"><span class="badge bg-primary badge-pill">C++</span></li>
 											    <li class="list-inline-item"><span class="badge bg-primary badge-pill">Wireshark</span></li>
 										    </ul>
 									    </div><!--//resume-timeline-item-desc-->
@@ -263,6 +259,8 @@
 										    </ul>
 										    <ul class="list-inline">
 											    <li class="list-inline-item"><span class="badge bg-primary badge-pill">Java</span></li>
+												<li class="list-inline-item"><span class="badge bg-primary badge-pill">C</span></li>
+												<li class="list-inline-item"><span class="badge bg-primary badge-pill">C++</span></li>
 											    <li class="list-inline-item"><span class="badge bg-primary badge-pill">Nachos</span></li>
 										    </ul>
 									    </div><!--//resume-timeline-item-desc-->
